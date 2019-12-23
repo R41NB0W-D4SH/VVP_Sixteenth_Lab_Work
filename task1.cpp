@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	setlocale(0, "");
-	int i, n;
+	int i, n, t;
 	cout << "Введите размерность массива: ";
 	cin >> n;
 
@@ -16,17 +16,19 @@ int main()
 		cin >> arr[i];
 	}
 
+    t = arr[0];
 	for (i = 0; i < n - 1; i++)
 	{
-		if (arr[i] == arr[i + 1])
+		if (arr[i] == arr[i + 1] || t == arr[i+1])
 		{
+		    t = arr[i + 1];
 			arr[i + 1] = 0;
 		}
 	}
 
 	for (i = 0; i < n; i++)
 	{
-		cout << "Элемент массива: " << arr[i] << endl;
+		cout << "a[" << i << "] : " << arr[i] << endl;
 	}
 
 	system("pause");
