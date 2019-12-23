@@ -13,7 +13,7 @@ int main()
 
 	for (i = 0; i < n; i++)
 	{
-		cout << "Введите элемент массива: ";
+		cout << "a[" << i << "] : ";
 		cin >> arr[i];
 		if (arr[i] > 0)
 		{
@@ -33,9 +33,11 @@ int main()
 		}
 	}
 
+	cout << endl;
+
 	for (i = 0; i < n + count; i++)
 	{
-		cout << "Элемент массива: " << ar2[i] << endl;
+		cout << "b[" << i << "] : " << ar2[i] << endl;
 	}
 
 	system("pause");
