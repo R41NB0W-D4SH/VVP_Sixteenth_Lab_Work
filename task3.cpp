@@ -16,7 +16,7 @@ int main()
 
 	for (i = 1; i < n - 1; i++)
 	{
-		cout << "Введите элемент массива: ";
+		cout << "a[" << i << "] : ";
 		cin >> arr[i];
 		ar2[i] = arr[i];
 	}
@@ -34,18 +34,18 @@ int main()
 		}
 	}
 
-	arr[0] = 0; 
+	arr[0] = 0;
 	arr[n - 1] = 0;
 
 	cout << "Новый массив: " << endl;
 	for (i = 0; i < n; i++)
 	{
-		cout << "Элемент массива: " << arr[i] << endl;
+		cout << "b[" << i << "] : " << arr[i] << endl;
 	}
 	cout << endl << "Старый массив: " << endl;
 	for (i = 1; i < n - 1; i++)
 	{
-		cout << "Элемент массива: " << ar2[i] << endl;
+		cout << "a[" << i << "] : " << ar2[i] << endl;
 	}
 
 	system("pause");
